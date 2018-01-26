@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# \(>__<)/ encoding: utf-8
+
 from re import match, sub
 from datetime import datetime
 from requests import get
