@@ -16,7 +16,7 @@ def fmt(date):
 
 
 class Dimibob:
-    def __init__(self, year=datetime.now().year):
+    def __init__(self, url=URL, year=datetime.now().year):
         self.cache = {}
         self.year = year
 
@@ -51,4 +51,4 @@ class Dimibob:
 
 
 if __name__ == '__main__':
-    print(Dimibob(2018).fetch(2))
+    print(Dimibob(year=2018).fetch(page=2))
