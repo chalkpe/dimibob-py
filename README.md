@@ -1,6 +1,11 @@
 # dimibob-py
 한국디지털미디어고등학교 급식 데이터 크롤러
 
+## 설치
+```bash
+$ pip install dimibob
+```
+
 ## 사용법
 ```python
 >>> from pprint import pprint
