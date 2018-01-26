@@ -18,6 +18,7 @@ def fmt(date):
 class Dimibob:
     def __init__(self, url=URL, year=datetime.now().year):
         self.cache = {}
+        self.url = url
         self.year = year
 
     def soup(self, url, cache_disabled=False):
@@ -30,7 +31,7 @@ class Dimibob:
         return list(filter(None, map(self.parse, self.list_articles(page))))
 
     def list_articles(self, page):
-        soup = self.soup(URL + str(page), True)
+        soup = self.soup(self.url + str(page), True)
         return soup.select('#dimigo_post_cell_2 .title a')
 
     def parse(self, article):
