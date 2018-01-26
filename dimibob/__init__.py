@@ -3,7 +3,7 @@ from datetime import datetime
 from requests import get
 from bs4 import BeautifulSoup as bs
 
-URL = 'http://dimigo.hs.kr/index.php?mid=school_cafeteria&page='
+URL = 'https://www.dimigo.hs.kr/index.php?mid=school_cafeteria&page='
 KEYS = {'조': 'breakfast', '중': 'lunch', '석': 'dinner', '간': 'snack'}
 
 
