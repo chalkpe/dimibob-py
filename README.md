@@ -10,7 +10,7 @@ $ pip install dimibob
 ```python
 >>> from pprint import pprint
 >>> from dimibob import Dimibob
->>> pprint(Dimibob(year=1234).fetch(15)[0])
+>>> pprint(Dimibob(year=1234).fetch(page=15)[0])
 {'added': '2018-01-26',
  'breakfast': '소고기무국/쌀밥/비엔나볶음/새우크런치/미역줄기볶음/포기김치/파인애플/한국야쿠르트',
  'date': '1234-04-08',
