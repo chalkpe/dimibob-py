@@ -55,4 +55,4 @@ class Dimibob:
 
 
 if __name__ == '__main__':
-    print(Dimibob(year=2018).fetch(page=2))
+    print(Dimibob(year=datetime.now().year).fetch(page=2))
